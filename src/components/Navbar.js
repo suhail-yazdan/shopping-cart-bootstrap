@@ -2,14 +2,18 @@ import '../styles/navBar.css'
 
 const Navbar = () => {
   return (
-    <div className='nav-container'>
-        <div className='navbar'>
-            <h3 className='appName'><a href= "/">Shopping Cart</a></h3>
-            
-            <ul className='links-wrapper'>
-                <li><a href= "/offers">Offers</a></li>
-                <li><a href= "/add-products">Add Products</a></li>
-            </ul>
+    <div className='w-100 nav-container bg-secondary-subtle position-fixed z-3'>
+        <div className='container mx-auto h-100 d-flex justify-content-between align-items-center '>
+          <h4 className='appName m-0 p-0'><a href= "/">Shopping Cart</a></h4>
+             
+          <ul className='links d-flex justify-content-start m-0 p-0 list-unstyled'>
+              <li className='nav-item mx-2'>
+                  <a href="/offers" className='nav-link'>Offers</a>
+              </li>
+              <li className='nav-item mx-2'>
+                  <a href="/add-products" className='nav-link'>Add Products</a>
+              </li>
+          </ul>
         </div>
     </div>
   )

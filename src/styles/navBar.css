@@ -1,47 +1,18 @@
 .nav-container{
-    width: 100%;
     height: 40px;
     background-color: #ccd;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
-}
-
-.navbar{
-    height: 40px;
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #ccd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
-
-.links-wrapper{
-    display: flex;
-}
-
-.links-wrapper li{
-    display: block;
-    list-style: none;
-    margin-left: 25px;
-}
-
-.links-wrapper li a{
-    text-decoration: none;
-    color: black;
 }
 
 .appName a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 
+.appName a:hover{
+    color: #6b6be2;
+}
 
-.links-wrapper li a:hover, .appName a:hover{
+.links li a:hover{
     text-decoration: underline;
+    color: #6b6be2;
 }

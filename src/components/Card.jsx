@@ -16,9 +16,11 @@ const Card = (props) => {
   };
 
   return (
-    <div className={getCardClass()} onClick={() => setCardSelected(!cardSelected)}>
-      <h2> {props.productDetail.name} </h2>
-      <p>{props.productDetail.desc}</p>
+    <div className = {`${getCardClass()} `} onClick={() => setCardSelected(!cardSelected)}>
+      <div>
+        <h4 className='m-0'> {props.productDetail.name} </h4>
+        <p className='m-0'>{props.productDetail.desc}</p>
+      </div>
       <div className={getOverlayState()}>
         <Counter 
           product = {props.productDetail}
