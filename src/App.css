@@ -1,11 +1,20 @@
+.main-container{
+  border-top: 1px solid black;
+}
+
+.header{
+  margin-top: 39px;
+}
+
+
 main {
   padding: 50px 0px;
 }
 
-div.grid1200 {
+/* div.grid1200 {
   width: 1200px;
   margin: 0px auto;
-}
+} */
 
 header {
   height: 80px;

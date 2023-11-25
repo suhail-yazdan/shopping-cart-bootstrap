@@ -46,9 +46,9 @@ function App() {
   
 
   return (
-    <div style={{"borderTop": "1px solid black"}}>
-      <header style={{"marginTop": "30px"}}>
-        <div className="grid1200">
+    <div className='main-container'>
+      <header className='header' style={{"marginTop": "40px"}}>
+        <div className='container d-flex justify-content-end align-items-center'>
             <Cart selectedProducts={products} />
         </div>
       </header>
