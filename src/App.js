@@ -54,15 +54,19 @@ function App() {
       </header>
 
       <main>
-        <div className="grid1200">
-          {products.map((product) => (
-            <Card
-              key = {product.pid}
-              productDetail = {product}
-              onQuantityIncreased = {e => handleQuantityIncreased(product, e)}
-              onQuantityDecreased = {e => handleQuantityDecreased(product, e)}
-            />
-          ))}
+        <div className="container">
+          <div className='row'>
+            <div className='col-8 offset-2'>
+              {products.map((product) => (
+                <Card
+                  key = {product.pid}
+                  productDetail = {product}
+                  onQuantityIncreased = {e => handleQuantityIncreased(product, e)}
+                  onQuantityDecreased = {e => handleQuantityDecreased(product, e)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </div>
