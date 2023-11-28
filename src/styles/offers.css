@@ -1,14 +1,12 @@
 .offers-container {
-    /* display: flex;
-    justify-content: center;
-    height: 100vh; */
-    background-image: linear-gradient(to bottom right, #dbebff, #eef);
+    background-color: #eef;
+    height: calc(100vh - 40px);
+    margin-top: 40px;
 }
 
 .offer{
     width: 250px;
     height: 350px;
-    position: inherit;
     background-color: #c5c5fc;
     border: 2px solid #3a3af0;
 }
@@ -43,91 +41,4 @@
 
 .offerLink:hover {
     box-shadow: 0px 0px 0px 4px #db0 inset, 0px 0px 0px 5px #3a3af0 inset;
-}
-
-
-
-div.offer-one, div.offer-two, div.offer-three {
-    width: 250px;
-    height: 300px;
-    background-color: white;
-    border: 2px solid #000;
-    margin: 10px;
-    position: relative;
-    background-image: url('https://images.pexels.com/photos/919453/pexels-photo-919453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: 300px auto;
-    background-repeat: no-repeat;
-    transition: all 600ms ease-in-out;
-    transform: translateY(0px);
-}
-
-div.animate {
-    transform: translateY(-30px);
-}
-
-div.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: #db0;
-    position: absolute;
-    top: -50px;
-    left: 125px;
-    transform: translateX(-50%);
-        box-shadow: 0px 0px 0px 2px #6d6d6d, 0px 0px 0px 5px #db0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 800ms ease-in-out;
-}
-
-div.circle span {
-    font-weight: 400;
-    font-size: 30px;
-    color: #000;
-}
-
-div.offer-one-container, div.offer-two-container, div.offer-three-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* a.offerLink {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    padding: 20px 30px;
-    background-color: #db0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    transition: all 200ms ease-in-out;
-}
-
-a.offerLink:hover {
-    box-shadow: 0px 0px 0px 4px #db0 inset, 0px 0px 0px 5px #000 inset;
-} */
-
-div.bottom {
-    width: inherit;
-    height: 50%;
-    background-color: #c5c5fc;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-div.bottom h1 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-div.bottom p {
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 10px;
 }
