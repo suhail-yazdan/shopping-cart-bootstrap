@@ -5,10 +5,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import AddProducts from './AddProducts';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import Offers from './Offers';
+import AddProducts from './AddProducts';
+import MyAccount from './MyAccount';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,8 +18,9 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<App />}/>
-        <Route path="/add-products" element={<AddProducts />}  />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/account" element={<MyAccount />} />
+        <Route path="/add-products" element={<AddProducts />}  />
         <Route path="*" element={<NotFound />} />
       </Routes>
   </ BrowserRouter>

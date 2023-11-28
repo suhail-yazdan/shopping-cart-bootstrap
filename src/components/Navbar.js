@@ -11,7 +11,7 @@ const Navbar = () => {
                   <a href="/offers" className='nav-link'>Offers</a>
               </li>
               <li className='nav-item mx-2'>
-                  <a href="/add-products" className='nav-link'>Add Products</a>
+                  <a href="/account" className='nav-link'>My Account</a>
               </li>
           </ul>
         </div>
